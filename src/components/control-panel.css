@@ -1,0 +1,36 @@
+.control-panel {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  box-shadow: -20px -10px 20px rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 1rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 9000;
+}
+
+.legend-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0;
+}
+
+.legend-list li {
+  display: inline-block;
+  margin: 0;
+}
+
+.legend-list input[type='checkbox'] {
+  display: none;
+}
+
+.legend-list :checked+label img {
+  -webkit-filter: drop-shadow(0 0 5px #FFF);
+  filter: drop-shadow(0 0 5px #FFF);
+}
+
+.legend-list :not(:checked)+label img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
