@@ -49,6 +49,7 @@ export const ControlPanel = ({ store } ) => {
       <ul className='legend-list'>
         <IconToggle type='town' store={store} />
         <IconToggle type='tower' store={store} />
+        <IconToggle type='shrine' store={store} />
       </ul>
     </div>
   )

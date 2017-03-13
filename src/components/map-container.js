@@ -25,6 +25,7 @@ export default class MapContainer extends Component {
         center={position}
         maxBounds={maxBounds}
         zoom={4}
+        onClick={(event) => console.log([event.latlng.lat, event.latlng.lng])}
        >
         <TileLayer
           minZoom={3}
