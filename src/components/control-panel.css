@@ -1,8 +1,8 @@
 .control-panel {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
   bottom: 0;
-  box-shadow: -20px -10px 20px rgba(0, 0, 0, 0.8);
-  color: #FFF;
   padding: 1rem;
   position: fixed;
   width: 100vw;
