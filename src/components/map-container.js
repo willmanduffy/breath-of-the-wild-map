@@ -17,6 +17,8 @@ const maxBounds = [
 const position = [70.505, -75.09];
 
 export default class MapContainer extends Component {
+  // For debugging points add this to <Map>
+  // `onClick={(event) => console.log(event.latlng)}`
   render() {
     return (
       <Map
