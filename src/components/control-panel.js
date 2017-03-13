@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './control-panel.css';
+import { icons } from './icons';
 
 // Actions
 export const setActiveIconTypes = (iconType) => {
@@ -29,27 +30,34 @@ export const reducer = (state, action) => {
   }
 };
 
-
 const IconToggle = ({ store, type }) => {
   const iconIdentifier = `${type}-control-checkbox`;
 
   return (
     <li>
       <input type='checkbox' id={iconIdentifier} />
-      <label htmlFor={iconIdentifier} onClick={() => store.dispatch(setActiveIconTypes(type))}>
-        <img alt={type} src={`images/icons/${type}.png`}  />
+
+      <label
+        htmlFor={iconIdentifier}
+        onClick={() => store.dispatch(setActiveIconTypes(type))}
+      >
+        <img src={`images/icons/${type}.png`} alt={type} />
       </label>
     </li>
   )
 }
 
 export const ControlPanel = ({ store } ) => {
+  const displayIconToggles = Object.keys(icons).map((iconType) => {
+    return (
+      <IconToggle type={iconType} store={store} />
+    )
+  });
+
   return (
     <div className='control-panel'>
       <ul className='legend-list'>
-        <IconToggle type='town' store={store} />
-        <IconToggle type='tower' store={store} />
-        <IconToggle type='shrine' store={store} />
+        {displayIconToggles}
       </ul>
     </div>
   )
