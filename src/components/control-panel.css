@@ -19,6 +19,11 @@
 .legend-list li {
   display: inline-block;
   margin: 0;
+  padding-right: 0.5rem;
+}
+
+.legend-list img {
+  height: 30px;
 }
 
 .legend-list input[type='checkbox'] {

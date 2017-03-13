@@ -6,50 +6,53 @@ import {
   Popup
 } from 'react-leaflet';
 
-import { townIcon } from './icons';
+import { icons } from './icons';
 
-const DisplayIcons = ({ locations }) => {
-  const icons = locations.map((town) => {
-    return (
-      <Marker
-        position={town.coordinates}
-        icon={townIcon}
-        title={town.name}
-        key={town.name}
-      >
-        <Popup>
-          <span>{town.name}</span>
-        </Popup>
-      </Marker>
-    )
+const DisplayIcons = ({ activeIconTypes, locations }) => {
+  const displayIcons = activeIconTypes.map((iconType) => {
+    return locations[iconType].map((location) => {
+      const icon = icons[iconType];
+
+      return (
+        <Marker
+          position={location.coordinates}
+          icon={icon}
+          title={location.name}
+          key={location.name}
+        >
+          <Popup>
+            <span>{location.name}</span>
+          </Popup>
+        </Marker>
+      )
+    });
   });
 
   return (
-    <div>{icons}</div>
+    <div>{displayIcons}</div>
   )
 };
 
 class MapIconsContainer extends Component {
   render() {
-    const { activeIconType, locations } = this.props;
+    const { activeIconTypes, locations } = this.props;
 
     return (
       <div>
-        {activeIconType && locations &&
-          <DisplayIcons locations={locations} />
+        {activeIconTypes && locations &&
+          <DisplayIcons { ...{ activeIconTypes, locations } } />
         }
       </div>
     )
   }
-
 };
 
 const mapStateToProps = (state) => {
-  const activeIconType = state.activeIconType;
+  const activeIconTypes = state.activeIconTypes;
 
   return {
-    activeIconType,
-    locations: state.locations[activeIconType]
+    activeIconTypes,
+    locations: state.locations
   }
 };
 

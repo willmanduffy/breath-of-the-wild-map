@@ -3,33 +3,41 @@ import React from 'react';
 import './control-panel.css';
 
 // Actions
-export const setActiveIconType = (iconType) => {
+export const setActiveIconTypes = (iconType) => {
   return {
     iconType,
-    type: 'SET_ACTIVE_ICON_TYPE'
+    type: 'SET_ACTIVE_ICON_TYPES'
   }
 };
 
 export const reducer = (state, action) => {
   switch(action.type) {
-    case 'SET_ACTIVE_ICON_TYPE':
+    case 'SET_ACTIVE_ICON_TYPES':
       const { iconType } = action;
-      const isAlreadyActive = (state.activeIconType === iconType);
-      const activeIconType = isAlreadyActive ? null : iconType;
+      const isAlreadyActive = state.activeIconTypes.includes(iconType);
+      let activeIconTypes;
 
-      return { ...state, activeIconType };
+      if (isAlreadyActive) {
+        activeIconTypes = state.activeIconTypes.filter((icon) => icon !== iconType);
+      } else {
+        activeIconTypes = state.activeIconTypes.concat(iconType);
+      }
+
+      return { ...state, activeIconTypes };
     default:
       return state;
   }
 };
 
 
-const IconToggle = ({ store }) => {
+const IconToggle = ({ store, type }) => {
+  const iconIdentifier = `${type}-control-checkbox`;
+
   return (
     <li>
-      <input type='checkbox' id='town-control-checkbox' />
-      <label htmlFor='town-control-checkbox' onClick={() => store.dispatch(setActiveIconType('towns'))}>
-        <img src='images/icons/town.png'  />
+      <input type='checkbox' id={iconIdentifier} />
+      <label htmlFor={iconIdentifier} onClick={() => store.dispatch(setActiveIconTypes(type))}>
+        <img alt={type} src={`images/icons/${type}.png`}  />
       </label>
     </li>
   )
@@ -39,7 +47,8 @@ export const ControlPanel = ({ store } ) => {
   return (
     <div className='control-panel'>
       <ul className='legend-list'>
-        <IconToggle store={store} />
+        <IconToggle type='town' store={store} />
+        <IconToggle type='tower' store={store} />
       </ul>
     </div>
   )

@@ -1,5 +1,12 @@
 {
-  "towns": [
+  "tower": [
+    {
+      "name": "Tabantha Tower",
+      "coordinates": [72.3625, -136.340625]
+    }
+  ],
+
+  "town": [
     {
       "name": "Gerudo Town",
       "coordinates": [33.055, -140.59]
