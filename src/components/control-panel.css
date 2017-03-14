@@ -19,11 +19,11 @@
 .legend-list li {
   display: inline-block;
   margin: 0;
-  padding-right: 0.5rem;
+  padding-right: 0.8rem;
 }
 
 .legend-list img {
-  height: 30px;
+  height: 45px;
 }
 
 .legend-list input[type='checkbox'] {
@@ -44,9 +44,11 @@
 .legend-list :checked+label img {
   -webkit-filter: drop-shadow(0 0 3px #4390ba);
   filter: drop-shadow(0 0 3px #4390ba);
+  transform: scale(1.15, 1.15);
 }
 
 .legend-list :not(:checked)+label img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition: ease-in-out 400ms transform;
 }
