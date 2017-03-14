@@ -21,8 +21,8 @@ const townIcon = Leaflet.icon({
 });
 
 export const icons = {
-  shrine: shrineIcon,
+  town: townIcon,
   stable: stableIcon,
   tower: towerIcon,
-  town: townIcon
+  shrine: shrineIcon
 }
