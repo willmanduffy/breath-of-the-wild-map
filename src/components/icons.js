@@ -5,6 +5,11 @@ const shrineIcon = Leaflet.icon({
   iconUrl: '/images/icons/shrine.png'
 });
 
+const stableIcon = Leaflet.icon({
+  iconSize: [30, 30],
+  iconUrl: '/images/icons/stable.png'
+});
+
 const towerIcon = Leaflet.icon({
   iconSize: [28, 38],
   iconUrl: '/images/icons/tower.png'
@@ -17,6 +22,7 @@ const townIcon = Leaflet.icon({
 
 export const icons = {
   shrine: shrineIcon,
+  stable: stableIcon,
   tower: towerIcon,
   town: townIcon
 }
