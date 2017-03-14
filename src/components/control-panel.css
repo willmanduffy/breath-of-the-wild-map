@@ -30,9 +30,20 @@
   display: none;
 }
 
+.legend-list label:hover:after{
+    bottom: 1rem;
+    font-size: 2rem;
+    right: 1rem;
+    color: #FFF;
+    content: attr(title);
+    position: fixed;
+    text-shadow: 0 1px 3px #000;
+    z-index: 9001;
+}
+
 .legend-list :checked+label img {
-  -webkit-filter: drop-shadow(0 0 5px #FFF);
-  filter: drop-shadow(0 0 5px #FFF);
+  -webkit-filter: drop-shadow(0 0 3px #4390ba);
+  filter: drop-shadow(0 0 3px #4390ba);
 }
 
 .legend-list :not(:checked)+label img {

@@ -30,7 +30,7 @@ export const reducer = (state, action) => {
   }
 };
 
-const IconToggle = ({ store, type }) => {
+const IconToggle = ({ displayName, store, type }) => {
   const iconIdentifier = `${type}-control-checkbox`;
 
   return (
@@ -40,6 +40,7 @@ const IconToggle = ({ store, type }) => {
       <label
         htmlFor={iconIdentifier}
         onClick={() => store.dispatch(setActiveIconTypes(type))}
+        title={displayName}
       >
         <img src={`images/icons/${type}.png`} alt={type} />
       </label>
@@ -49,8 +50,10 @@ const IconToggle = ({ store, type }) => {
 
 export const ControlPanel = ({ store } ) => {
   const displayIconToggles = Object.keys(icons).map((iconType) => {
+    const { displayName } = icons[iconType];
+
     return (
-      <IconToggle type={iconType} store={store} />
+      <IconToggle { ...{ displayName, type: iconType, store } } />
     )
   });
 

@@ -8,6 +8,8 @@ import {
 
 import { icons } from './icons';
 
+import './map-icons-container.css';
+
 const DisplayIcons = ({ activeIconTypes, locations }) => {
   const displayIcons = activeIconTypes.map((iconType) => {
     return locations[iconType].map((location) => {
@@ -16,7 +18,8 @@ const DisplayIcons = ({ activeIconTypes, locations }) => {
       return (
         <Marker
           position={location.coordinates}
-          icon={icon}
+          className={icon.classNames}
+          icon={icon.icon}
           title={location.name}
           key={location.name}
         >

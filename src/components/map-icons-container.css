@@ -1,0 +1,4 @@
+.blue-glow {
+  -webkit-filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA);
+  filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA);
+}
