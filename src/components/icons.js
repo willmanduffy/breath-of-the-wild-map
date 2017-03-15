@@ -1,7 +1,7 @@
 import Leaflet from 'leaflet';
 
 const shrineIcon = Leaflet.icon({
-  className: 'blue-glow pulsing-icon',
+  className: 'pulsing-icon',
   iconSize: [27, 26],
   iconUrl: '/images/icons/shrine.png'
 });

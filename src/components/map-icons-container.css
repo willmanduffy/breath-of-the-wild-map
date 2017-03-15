@@ -4,10 +4,15 @@
 }
 
 .pulsing-icon {
-  animation: pulsate 2s ease-in;
-  animation-iteration-count: infinite;
+  animation: pulsate 3s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes pulsate {
-  50% { filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(1.3) };
+  0%, 100% {
+    filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(1.0);
+  }
+  50% {
+    filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(1.5);
+  }
 }
