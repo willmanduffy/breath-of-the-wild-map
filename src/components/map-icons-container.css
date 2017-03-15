@@ -10,9 +10,9 @@
 
 @keyframes pulsate {
   0%, 100% {
-    filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(1.0);
+    filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(0.9);
   }
   50% {
-    filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(1.5);
+    filter: drop-shadow(0 0 3px #4390BA) drop-shadow(0 0 3px #4390BA) brightness(1.4);
   }
 }
