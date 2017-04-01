@@ -27,23 +27,27 @@ const korokIcon = Leaflet.icon({
   iconUrl: '/images/icons/korok.png'
 });
 
-export const icons = {
+export default {
   town: {
     displayName: 'Towns',
     icon: townIcon
   },
+
   stable: {
     displayName: 'Stables',
     icon: stableIcon
   },
+
   tower: {
     displayName: 'Towers',
     icon: towerIcon
   },
+
   shrine: {
     displayName: 'Shrines',
     icon: shrineIcon
   },
+
   korok: {
     displayName: 'Korok Seeds',
     icon: korokIcon,
@@ -61,16 +65,6 @@ export const icons = {
       /* 10 */ "Boulders (a large boulder must be moved to a certain position)",
       /* 11 */ "Horse Hurdles (a fence which must be jumped over while riding a horse)",
       /* 12 */ "Archery (a series of targets you must hit with arrows while standing next to a pinwheel)"
-  ]
-  }
-}
-
-export const iconText = (location, iconType) => {
-  const instructions = icons[iconType].instructions;
-
-  if (location.name) {
-    return location.name;
-  } else if (instructions) {
-    return instructions[location.instructionType];
+    ]
   }
 }

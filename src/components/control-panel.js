@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './control-panel.css';
-import { icons } from '../icons';
+import icons from '../data/icons';
 
 // Actions
 export const setActiveIconTypes = (iconType) => {
@@ -53,7 +53,7 @@ export const ControlPanel = ({ store } ) => {
     const { displayName } = icons[iconType];
 
     return (
-      <IconToggle { ...{ displayName, type: iconType, store } } />
+      <IconToggle { ...{ displayName, type: iconType, key: iconType, store } } />
     )
   });
 

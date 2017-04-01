@@ -6,9 +6,19 @@ import {
   Popup
 } from 'react-leaflet';
 
-import { icons, iconText } from '../icons';
+import icons from '../data/icons';
 
 import './map-icons-container.css';
+
+const iconText = (location, iconType) => {
+  const instructions = icons[iconType].instructions;
+
+  if (location.name) {
+    return location.name;
+  } else if (instructions) {
+    return instructions[location.instructionType];
+  }
+}
 
 const DisplayIcons = ({ activeIconTypes, locations }) => {
   const displayIcons = activeIconTypes.map((iconType) => {

@@ -11,7 +11,7 @@ import {
 
 import MapContainer from './components/map-container';
 
-import locationData from './data.json';
+import locationData from './data/locations';
 
 const initialState = {
   activeIconTypes: [],
