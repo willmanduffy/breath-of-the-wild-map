@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './control-panel.css';
-import { icons } from './icons';
+import { icons } from '../icons';
 
 // Actions
 export const setActiveIconTypes = (iconType) => {
