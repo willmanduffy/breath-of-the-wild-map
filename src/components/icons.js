@@ -22,6 +22,11 @@ const townIcon = Leaflet.icon({
   iconUrl: '/images/icons/town.png'
 });
 
+const korokIcon = Leaflet.icon({
+  iconSize: [24, 24],
+  iconUrl: '/images/icons/korok.png'
+});
+
 export const icons = {
   town: {
     displayName: 'Towns',
@@ -38,5 +43,9 @@ export const icons = {
   shrine: {
     displayName: 'Shrines',
     icon: shrineIcon
+  },
+  korok: {
+    displayName: 'Korok Seeds',
+    icon: korokIcon
   }
 }

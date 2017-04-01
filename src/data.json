@@ -1,4 +1,99 @@
 {
+  "korok": [
+    {
+      "name": "Korok Seed 1",
+      "coordinates": [51.39920565355378, -85.2099609375],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 2",
+      "coordinates": [51.01375465718821, -84.24316406250001],
+      "seedType": 2
+    },
+    {
+      "name": "Korok Seed 3",
+      "coordinates": [50.48547354578499, -87.78076171875001],
+      "seedType": 3
+    },
+    {
+      "name": "Korok Seed 4",
+      "coordinates": [49.97948776108648, -85.80322265625],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 5",
+      "coordinates": [49.35375571830993, -87.60498046875],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 6",
+      "coordinates": [49.937079756975294, -94.57031250000001],
+      "seedType": 4
+    },
+    {
+      "name": "Korok Seed 7",
+      "coordinates": [47.73932336136857, -95.40527343750001],
+      "seedType": 5
+    },
+    {
+      "name": "Korok Seed 8",
+      "coordinates": [47.08508535995386, -90.92285156250001],
+      "seedType": 5
+    },
+    {
+      "name": "Korok Seed 9",
+      "coordinates": [47.29413372501023, -86.37451171875],
+      "seedType": 2
+    },
+    {
+      "name": "Korok Seed 10",
+      "coordinates": [46.33175800051563, -84.99023437500001],
+      "seedType": 5
+    },
+    {
+      "name": "Korok Seed 11",
+      "coordinates": [46.01222384063236, -77.73925781250001],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 12",
+      "coordinates": [45.5679096098613, -77.84912109375],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 13",
+      "coordinates": [42.553080288955826, -84.55078125],
+      "seedType": 5
+    },
+    {
+      "name": "Korok Seed 14",
+      "coordinates": [41.73852846935917, -91.56005859375001],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 15",
+      "coordinates": [41.65649719441145, -92.19726562500001],
+      "seedType": 1
+    },
+    {
+      "name": "Korok Seed 16",
+      "coordinates": [43.08493742707595, -95.09765625000001],
+      "seedType": 7
+    },
+    {
+      "name": "Korok Seed 17",
+      "coordinates": [44.465151013519645, -96.48193359375001],
+      "seedType": 4
+    },
+    {
+      "name": "Korok Seed 18",
+      "coordinates": [46.92025531537454, -97.71240234375001],
+      "seedType": 1
+    }
+  ],
+
+
+
   "shrine": [
     {
       "name": "Bosh Kala Shrine",
@@ -72,20 +167,6 @@
       "name": "Toto Sah Shrine",
       "coordinates": [39.791654835253425, -36.21093750000001]
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       "name": "Ne'ez Yohma Shrine",
       "coordinates": [69.3570863282203, -9.492187500000002]
@@ -228,7 +309,7 @@
     },
     {
       "name": "Kuh Takkar Shrine",
-      "coordinates": [55.07836723201515, -126.56250000000001]
+      "coordinates": [19.394067895396613, -125.63964843750001]
     },
     {
       "name": "Kema Kosassa Shrine",
@@ -496,6 +577,8 @@
     }
   ],
 
+
+
   "tower": [
     {
       "name": "Akkala Tower",
@@ -519,13 +602,11 @@
     },
     {
       "name": "Gerudo Tower",
-      "coordinates": [
-47.754097979680026, -137.46093750000003]
+      "coordinates": [47.754097979680026, -137.46093750000003]
     },
     {
       "name": "Great Plateau Tower",
-      "coordinates": [
-49.724479188712984, -80.26611328125]
+      "coordinates": [49.724479188712984, -80.26611328125]
     },
     {
       "name": "Hateno Tower",
@@ -560,6 +641,8 @@
       "coordinates": [75.425, -54.03]
     }
   ],
+
+
 
   "town": [
     {
@@ -599,6 +682,9 @@
       "coordinates": [68.655, -10.59]
     }
   ],
+
+
+
   "stable": [
     {
       "name": "Dueling Peaks Stable",
