@@ -183,4 +183,10 @@ export default [
       "coordinates": [80.77119247045668, -90.50537109375001],
       "instructionType": 10
     },
+
+    
+    {
+      "coordinates": [39.62261494094297, -159.47753906250003],
+      "instructionType": 8
+    },
   ];
