@@ -22,6 +22,10 @@
   padding-right: 0.8rem;
 }
 
+.legend-list label {
+  cursor: pointer;
+}
+
 .legend-list img {
   height: 30px;
 }
