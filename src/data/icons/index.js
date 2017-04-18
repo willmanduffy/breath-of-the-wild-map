@@ -27,10 +27,20 @@ const korokIcon = Leaflet.icon({
   iconUrl: '/images/icons/korok.png'
 });
 
+const memoryIcon = Leaflet.icon({
+  iconSize: [30, 30],
+  iconUrl: '/images/icons/memory.png'
+});
+
 export default {
   town: {
     displayName: 'Towns',
     icon: townIcon
+  },
+
+  memory: {
+    displayName: 'Memory',
+    icon: memoryIcon
   },
 
   stable: {
