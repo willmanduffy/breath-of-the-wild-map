@@ -1709,4 +1709,20 @@ export default [
       "coordinates": [47.100044694025215, 14.370117187500002],
       "instructionType": 1
     },
+    {
+      "coordinates": [82.16045417268228, -66.31347656250001],
+      "instructionType": 0
+    },
+    {
+      "coordinates": [82.33824323729576, -59.10644531250001],
+      "instructionType": 0
+    },
+    {
+      "coordinates": [81.64054024275907, -54.36035156250001],
+      "instructionType": 0
+    },
+    {
+      "coordinates": [82.60026920613421, -49.17480468750001],
+      "instructionType": 0
+    },
   ];
