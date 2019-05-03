@@ -1818,4 +1818,12 @@ export default [
       "coordinates": [81.57962638205724, 10.854492187500002],
     "instructionType": 0
     },
+    { // Grid 19
+      "coordinates": [81.48580198783543, 18.061523437500004],
+      "instructionType": 0
+    },
+    { // Grid 19
+      "coordinates": [80.90414280260684, 18.127441406250004],
+    "instructionType": 0
+    },
   ];
