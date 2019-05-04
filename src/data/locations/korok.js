@@ -2018,4 +2018,24 @@ export default [
       "coordinates": [79.80452657355139, -94.85595703125],
       "instructionType": 0
     },
+    { // Grid 24
+      "coordinates": [79.72252646849738, -89.23095703125001],
+      "instructionType": 0
+    },
+    { // Grid 24
+      "coordinates": [79.4323707591471, -89.296875],
+      "instructionType": 0
+    },
+    { // Grid 24
+      "coordinates": [77.46125911271393, -88.76953125],
+      "instructionType": 0
+    },
+    { // Grid 24
+      "coordinates": [79.35958957209913, -80.52978515625001],
+      "instructionType": 0
+    },
+    { // Grid 24
+      "coordinates": [80.59331882551385, -70.81787109375001],
+      "instructionType": 0
+    },
   ]
