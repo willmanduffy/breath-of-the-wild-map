@@ -2098,4 +2098,28 @@ export default [
     "coordinates": [79.87815917387738, -32.36572265625001],
     "instructionType": 0
     },
+    { // Grid 27
+      "coordinates": [77.41346715054658, -21.357421875000004],
+      "instructionType": 0
+    },
+    { // Grid 27
+    "coordinates": [77.12292955370509, -10.678710937500002],
+    "instructionType": 0
+    },
+    { // Grid 27
+    "coordinates": [77.45171502654237, -6.416015625000001],
+    "instructionType": 0
+    },
+    { // Grid 27
+    "coordinates": [78.34053291852432, -8.327636718750002],
+    "instructionType": 0
+    },
+    { // Grid 27
+    "coordinates": [79.11753822560125, -7.185058593750001],
+    "instructionType": 0
+    },
+    { // Grid 27
+    "coordinates": [80.02765497223292, -9.338378906250002],
+    "instructionType": 0
+    },
   ]
