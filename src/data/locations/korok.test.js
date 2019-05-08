@@ -1,5 +1,5 @@
 import korok from './korok';
 
 it('contains the proper number of koroks', () => {
-  expect(korok.length).toBe(508);
+  expect(korok.length).toBe(523);
 });
