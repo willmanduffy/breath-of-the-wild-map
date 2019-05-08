@@ -2038,4 +2038,12 @@ export default [
       "coordinates": [80.59331882551385, -70.81787109375001],
       "instructionType": 0
     },
+    { // Grid 25
+      "coordinates": [80.459508940007, -65.78613281250001],
+      "instructionType": 0
+    },
+    { // Grid 25
+    "coordinates": [79.87429692631282, -57.54638671875],
+    "instructionType": 0
+    },
   ]
