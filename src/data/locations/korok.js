@@ -2406,4 +2406,20 @@ export default [
     "coordinates": [72.95187415682075, -77.08007812500001],
     "instructionType": 0
     },
+    { // Grid 35
+      "coordinates": [75.2250649237144, -51.61376953125001],
+      "instructionType": 0
+    },
+    { // Grid 35
+      "coordinates": [74.25973837093132, -54.27246093750001],
+      "instructionType": 0
+    },
+    { // Grid 35
+      "coordinates": [72.93898577148649, -59.26025390625001],
+      "instructionType": 0
+    },
+    { // Grid 35
+      "coordinates": [73.15680773175981, -48.18603515625001],
+      "instructionType": 0
+    },
   ]
