@@ -2599,4 +2599,52 @@ export default [
       "coordinates": [72.36244812858165, 15.930175781250002],
       "instructionType": 0
     },
+    { // Grid 41
+      "coordinates": [71.90406421501453, -142.75634765625003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [71.04552881933586, -144.42626953125003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [66.45188654545449, -147.87597656250003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [66.75724984139227, -140.16357421875003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [66.93866882358137, -140.88867187500003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [67.53377157140453, -143.83300781250003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [68.38299634059615, -144.20654296875003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [68.64855644136613, -137.41699218750003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [70.13289843995393, -142.71240234375003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [71.00265967789281, -139.76806640625003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [71.24435551310674, -140.40527343750003],
+      "instructionType": 0
+    },
+    { // Grid 41
+      "coordinates": [71.36408925968374, -137.08740234375003],
+      "instructionType": 0
+    },
   ]
