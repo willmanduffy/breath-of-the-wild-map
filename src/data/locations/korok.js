@@ -2927,4 +2927,72 @@ export default [
       "coordinates": [71.11677038645317, -73.08105468750001],
       "instructionType": 0
     },
+    { // Grid 45
+      "coordinates": [68.77619083759828, -68.51074218750001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [68.87935761076952, -68.29101562500001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [70.22231091600497, -68.48876953125001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [70.80136623397624, -64.84130859375001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [72.01294479986035, -66.84082031250001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [72.10094360009953, -64.24804687500001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [71.69129271863999, -60.82031250000001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [70.1403642720717, -62.81982421875001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [69.33383491964828, -60.90820312500001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [67.28053044353817, -58.68896484375001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [70.19999407534664, -57.52441406250001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [70.87349131926352, -58.93066406250001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [71.335983102213, -57.34863281250001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [70.56149224990759, -54.71191406250001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [68.97416358340674, -49.89990234375],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [67.44122869796351, -50.16357421875001],
+      "instructionType": 0
+    },
+    { // Grid 45
+      "coordinates": [66.36394715015696, -48.40576171875],
+      "instructionType":    0
+    },
   ]
