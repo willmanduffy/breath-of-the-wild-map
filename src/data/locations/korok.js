@@ -2995,4 +2995,36 @@ export default [
       "coordinates": [66.36394715015696, -48.40576171875],
       "instructionType":    0
     },
+    { // Grid 46
+      "coordinates": [70.69995129442536, -46.845703125],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [71.38514208411497, -44.36279296875],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [71.52490903732816, -44.53857421875001],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [71.55969222946285, -39.15527343750001],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [69.67998950911426, -40.14404296875],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [69.58056349224898, -36.58447265625001],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [70.72172636005789, -28.432617187500004],
+      "instructionType": 0
+    },
+    { // Grid 46
+      "coordinates": [66.70516871330432, -44.736328125],
+      "instructionType": 0
+    },
   ]
