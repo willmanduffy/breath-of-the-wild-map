@@ -3599,4 +3599,12 @@ export default [
       "coordinates": [60.130563616914216, 2.2192382812500004],
       "instructionType": 0
     },
+    { // Grid 63
+      "coordinates": [47.97521412341618, -97.53662109375001],
+      "instructionType": 0
+    },
+    { // Grid 67
+      "coordinates": [55.665193184436035, -7.229003906250001],
+      "instructionType": 0
+    },
   ]
