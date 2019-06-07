@@ -1,7 +1,7 @@
 import korok from './korok';
 
 it('contains the proper number of koroks', () => {
-  expect(korok.length).toBe(854);
+  expect(korok.length).toBe(854 + 26);
 });
 
 it('has only and all the right properties for every seed', () => {
