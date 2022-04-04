@@ -1,8 +1,10 @@
 {
+  "homepage": "https://suradaBANG.github.io/breath-of-the-wild-map/",
   "name": "breath-of-the-wild-map",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "react-scripts": "0.9.5"
   },
   "dependencies": {
@@ -14,6 +16,8 @@
     "redux": "^3.6.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
