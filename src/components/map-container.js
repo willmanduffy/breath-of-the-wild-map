@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import {
-  Map,
-  TileLayer
-} from 'react-leaflet';
+import { Map, TileLayer } from "react-leaflet";
 
-import MapIconsContainer from './map-icons-container';
+import MapIconsContainer from "./map-icons-container";
 
-import './map-container.css';
+import "./map-container.css";
 
 const maxBounds = [
   [0, -176.59],
-  [85.455, 38]
+  [85.455, 38],
 ];
 
 const position = [70.505, -75.09];
@@ -26,15 +23,15 @@ export default class MapContainer extends Component {
         maxBounds={maxBounds}
         zoom={4}
         onClick={(event) => console.log([event.latlng.lat, event.latlng.lng])}
-       >
+      >
         <TileLayer
           minZoom={3}
           maxZoom={6}
-          url='/images/tiles/{z}/{x}/{y}.png'
+          url="https://raw.githubusercontent.com/suradaBANG/breath-of-the-wild-map/master/public/images/tiles/{z}/{x}/{y}.png"
         />
 
         <MapIconsContainer />
       </Map>
-    )
+    );
   }
 }

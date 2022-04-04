@@ -1,25 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import './control-panel.css';
-import icons from '../data/icons';
+import "./control-panel.css";
+import icons from "../data/icons";
 
 // Actions
 export const setActiveIconTypes = (iconType) => {
   return {
     iconType,
-    type: 'SET_ACTIVE_ICON_TYPES'
-  }
+    type: "SET_ACTIVE_ICON_TYPES",
+  };
 };
 
 export const reducer = (state, action) => {
-  switch(action.type) {
-    case 'SET_ACTIVE_ICON_TYPES':
+  switch (action.type) {
+    case "SET_ACTIVE_ICON_TYPES":
       const { iconType } = action;
       const isAlreadyActive = state.activeIconTypes.includes(iconType);
       let activeIconTypes;
 
       if (isAlreadyActive) {
-        activeIconTypes = state.activeIconTypes.filter((icon) => icon !== iconType);
+        activeIconTypes = state.activeIconTypes.filter(
+          (icon) => icon !== iconType
+        );
       } else {
         activeIconTypes = state.activeIconTypes.concat(iconType);
       }
@@ -35,33 +37,34 @@ const IconToggle = ({ displayName, store, type }) => {
 
   return (
     <li>
-      <input type='checkbox' id={iconIdentifier} />
+      <input type="checkbox" id={iconIdentifier} />
 
       <label
         htmlFor={iconIdentifier}
         onClick={() => store.dispatch(setActiveIconTypes(type))}
         title={displayName}
       >
-        <img src={`images/icons/${type}.png`} alt={type} />
+        <img
+          src={`https://raw.githubusercontent.com/suradaBANG/breath-of-the-wild-map/master/public/images/icons/${type}.png`}
+          alt={type}
+        />
       </label>
     </li>
-  )
-}
+  );
+};
 
-export const ControlPanel = ({ store } ) => {
+export const ControlPanel = ({ store }) => {
   const displayIconToggles = Object.keys(icons).map((iconType) => {
     const { displayName } = icons[iconType];
 
     return (
-      <IconToggle { ...{ displayName, type: iconType, key: iconType, store } } />
-    )
+      <IconToggle {...{ displayName, type: iconType, key: iconType, store }} />
+    );
   });
 
   return (
-    <div className='control-panel'>
-      <ul className='legend-list'>
-        {displayIconToggles}
-      </ul>
+    <div className="control-panel">
+      <ul className="legend-list">{displayIconToggles}</ul>
     </div>
-  )
-}
+  );
+};
